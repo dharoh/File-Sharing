@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File Sharing-Homepage</title>
+
+	<style type="text/css">
+		th.noBorder{
+			border: 0;	
+		}
+
+	.button{
+		background-color: blue;
+		align-content: right;
+		color: white;
+		width: 30%
+	}
+
+	.button1{
+	background-color: blue;
+		align-content: right;
+		color: white;
+		width: 100%	
+	}
+
+
+	</style>
+
+</head>
+<body background="image.png">
+<FONT color="blue" size=32>
+<h1 align="center">File Sharing System</h1>
+</FONT>
+
+
+<form action="upload" method="POST" enctype = "multipart/form-data">
+
+<table align="left" width="45%" border="1" bordercolor="RED" bgcolor="yellow">
+<tr>
+<th class="noBorder">
+	<h1>Send Files</h1>
+</th>
+</tr>
+<tr>
+<td align="center"><input type="File"  name="f" size = "3221225472" multiple>
+
+<input type="submit" value="Send Files" class="button">
+</td>
+</tr>
+
+</table>
+</form>
+
+<form action="downloadMulti.jsp">
+
+<table align="right" width="45%" border="1" bordercolor="RED" bgcolor="yellow">
+<tr>
+<th class="noBorder">
+	<h1>Receive Files</h1>
+</th>
+</tr>
+<tr>
+
+<td align="center"><input type="submit" class="button1" value="Receive Files"></td>
+</tr>
+
+</table>
+</form>
+
+
+</body>
+</html>
